@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/red2" android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Verification"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="67dp"
+    android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:text="Please enter the verification code sent "
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/box1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="5dp"
+            android:height="50dp"
+            android:background="#ffffff"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/box2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/box1"
+            android:layout_alignBottom="@+id/box1"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/box1"
+            android:layout_toRightOf="@+id/box1"
+            android:height="50dp"
+            android:background="#fffffF"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/box3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/box1"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/box2"
+            android:height="50dp"
+            android:background="#fffffF"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/box4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/sendcode"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/box3"
+            android:height="50dp"
+            android:background="#fffffF"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/box5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/box4"
+            android:layout_alignBottom="@+id/box4"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/box4"
+            android:height="50dp"
+            android:background="#ffffff"
+            android:numeric="integer"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/box6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBaseline="@+id/box4"
+            android:layout_alignBottom="@+id/box4"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/box5"
+            android:height="50dp"
+            android:background="#fffffF"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sendcode"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/round_button"
+        android:cropToPadding="true"
+        android:drawableTop="@drawable/send2"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:scaleType="fitCenter" />
+
+</LinearLayout>
+

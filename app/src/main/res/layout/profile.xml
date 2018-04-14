@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:background="@drawable/red2">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:phoneNumber="false"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/locationpin"
+                android:drawablePadding="0dp"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/address"
+        android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/read"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/btnColor"
+                android:gravity="left|center_vertical"
+                android:onClick="onClick"
+                android:text="Scanner"
+                android:paddingLeft="10dp"
+                android:drawableRight="@drawable/qrreader"
+                android:paddingRight="10dp"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/guestlist"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/read"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/btnColor"
+                android:gravity="left|center_vertical"
+                android:onClick="onSelect"
+                android:drawableRight="@drawable/list"
+                android:paddingRight="10dp"
+                android:text="Visitor List"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/guestlist"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Out"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+
+</RelativeLayout>
+</LinearLayout>
+

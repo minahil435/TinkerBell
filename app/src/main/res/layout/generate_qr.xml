@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red2">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/sendCode"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@color/btnColor"
+        android:foregroundGravity="center_horizontal"
+      />
+
+    <Button
+        android:id="@+id/sendcode"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:cropToPadding="true"
+        android:drawableTop="@drawable/download"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:onClick="saving"/>
+
+
+
+
+
+</LinearLayout>
